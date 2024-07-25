@@ -9,7 +9,5 @@ import reactor.core.publisher.Mono;
 
 public interface CarteiraRepository extends ReactiveMongoRepository<Carteira, String> {
     Mono<Carteira> findByNome(String nome);
-
     Flux<Carteira> findAll();
-
 }
